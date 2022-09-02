@@ -1,0 +1,55 @@
+@header-li-hover: #686868;
+
+.nav-bar {
+    top: 0;
+    display: flex;
+    position: relative;
+    height: auto;
+    padding: 0 10%;
+}
+
+.nav {
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-list {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 100%;
+
+    & li {
+        display: inline;
+        cursor: pointer;
+
+        & a {
+            padding: 10px;
+        }
+
+        & :hover {
+            color: @header-li-hover;
+        }
+    }
+}
+
+.logout {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 100%;
+
+    & p {
+        cursor: pointer;  
+    }
+
+    & p:hover {
+        color: @header-li-hover;
+    }
+}
